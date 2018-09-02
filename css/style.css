@@ -1,0 +1,276 @@
+/*variables*/
+/*global start*/
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  position: relative; }
+
+/*global end*/
+/*landing starts*/
+.landing {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  position: relative;
+  height: 100vh;
+  background: url("../img/Landing Image.png") no-repeat;
+  text-align: center;
+  background-size: 100% 100%; }
+  .landing .a {
+    text-align: center;
+    position: absolute;
+    top: 75%;
+    left: 0; }
+    .landing .a a {
+      background-color: #000;
+      color: #fff;
+      border: 2px solid #fff;
+      transition: all .5s ease-in-out;
+      padding: 7px 25px;
+      border-radius: 35px;
+      outline: none;
+      text-align: center;
+      text-decoration: none; }
+    .landing .a a:hover {
+      background-color: #4e598c; }
+  .landing .down {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    color: #fcff00;
+    font-size: 30px;
+    animation: down 3s infinite; }
+@keyframes down {
+  0% {
+    bottom: 10px; }
+  50% {
+    bottom: 40px; }
+  100% {
+    bottom: 10px; } }
+/* The side navigation menu */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s; }
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s; }
+  .sidenav a:first-of-type {
+    margin-top: 50px; }
+  .sidenav .brand {
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    border-radius: 5px;
+    width: 60px;
+    height: 60px; }
+  .sidenav a:hover {
+    color: #fcff00; }
+  .sidenav .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 36px;
+    color: #4e598c;
+    cursor: pointer; }
+
+.openbtn {
+  position: fixed;
+  top: 30px;
+  left: 20px;
+  z-index: 9999;
+  padding-left: 20px;
+  font-size: 30px;
+  cursor: pointer; }
+  .openbtn svg {
+    color: #fcff00; }
+
+/*side nav end*/
+/*about start*/
+.about {
+  padding-top: 100px;
+  text-align: center;
+  font-family: "Poppins", sans-serif; }
+  .about h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    text-transform: capitalize; }
+    .about h2 span {
+      color: #fcff00; }
+  .about hr {
+    margin: 20px auto;
+    width: 140px;
+    height: 5px;
+    background: #4e598c; }
+  .about .box {
+    margin: auto;
+    width: 100%;
+    height: 350px;
+    border: 10px solid #fcff00;
+    box-sizing: border-box;
+    transition: all 1s ease-in-out;
+    margin-bottom: 50px; }
+    .about .box .text {
+      width: 100%;
+      height: 100%;
+      background: #000;
+      margin: 0;
+      color: #fff;
+      padding: 20px;
+      font-size: 16px;
+      transform: scale(0.9, 0.9);
+      transition: all 1s ease-in-out; }
+      .about .box .text h2 {
+        margin: 0;
+        margin-bottom: 20px; }
+      .about .box .text p {
+        margin: 0; }
+  .about .box:hover .text {
+    transform: scale(1, 1); }
+
+.FAQ {
+  margin-top: 50px; }
+  .FAQ h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    text-transform: capitalize; }
+  .FAQ hr {
+    margin: 20px auto;
+    width: 140px;
+    height: 5px;
+    background: #4e598c; }
+  .FAQ .tabs {
+    margin: 50px auto;
+    width: 50%;
+    font-size: 16px;
+    text-align: left; }
+    .FAQ .tabs P {
+      font-size: 15px; }
+    .FAQ .tabs h3 {
+      padding: 17px;
+      margin: 0;
+      font-size: 17px;
+      background-color: #fcff00;
+      color: #000;
+      text-transform: capitalize;
+      cursor: pointer;
+      text-align: left;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.5); }
+    .FAQ .tabs div {
+      padding: 10px;
+      color: #fff;
+      background: #000;
+      display: none; }
+  @media only screen and (max-width: 700px) {
+    .FAQ .tabs {
+      width: 100%; } }
+
+.Sponsors {
+  margin-top: 50px;
+  font-family: "Poppins", sans-serif;
+  height: 70vh; }
+  .Sponsors h2 {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-weight: 700;
+    text-transform: capitalize; }
+  .Sponsors hr {
+    margin: 20px auto;
+    width: 140px;
+    height: 5px;
+    background: #4e598c;
+    margin-bottom: 50px; }
+  .Sponsors .o {
+    height: 360px;
+    background: url("../img/o.JPG");
+    background-size: 100% 100%;
+    text-align: center; }
+    .Sponsors .o .k {
+      padding: 20px;
+      color: #fff;
+      background: #000;
+      border-radius: 30px;
+      border: none;
+      margin-top: 230px;
+      transition: all .5s ease-in-out; }
+    .Sponsors .o .k:hover {
+      background: #4e598c; }
+    .Sponsors .o .modal-body {
+      text-align: left; }
+      .Sponsors .o .modal-body address {
+        display: inline-block; }
+  .Sponsors .i {
+    height: 360px;
+    background: url("../img/i.JPG");
+    background-size: 100% 100%; }
+
+.footer {
+  margin-top: 100px;
+  width: 100%;
+  background: #000;
+  text-align: center;
+  color: #fff;
+  position: absolute; }
+  .footer ul {
+    list-style: none;
+    margin: auto; }
+    .footer ul li {
+      display: inline-block;
+      padding: 20px;
+      transition: all .5s ease-in-out; }
+      .footer ul li a {
+        text-decoration: none;
+        color: #fff;
+        transition: all .4s ease-in-out; }
+        .footer ul li a button {
+          border: none;
+          background: transparent;
+          padding: 3px;
+          margin: 0;
+          font-size: 14px; }
+        .footer ul li a button:hover {
+          color: #fcff00;
+          background: transparent; }
+        .footer ul li a h4 {
+          color: #000; }
+        .footer ul li a .modal-body {
+          color: #000;
+          text-align: left; }
+      .footer ul li a:hover {
+        color: #fcff00; }
+
+@media only screen and (max-width: 700px) {
+  .footer {
+    bottom: -15%; } }
+.up {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  z-index: 9999;
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  background: #fcff00;
+  border-radius: 15%;
+  padding: 12px;
+  color: #fff;
+  font-size: 20px;
+  display: none; }
+  .up svg {
+    padding-bottom: 0;
+    margin-bottom: 6px; }
+
+/*# sourceMappingURL=style.css.map */
